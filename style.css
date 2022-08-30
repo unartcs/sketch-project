@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 * {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     padding: 0;
     margin: 0;
-    color: white;
     /* border: 1px white solid; */
-
+    font-family: 'Amatic SC', cursive;
 }
 
 html, body {
@@ -27,6 +28,9 @@ body {
     width: 80%;
     display: flex;
     /* justify-content: center; */
+    /* flex: 1; */
+    flex-shrink: 1;
+    flex: ;
 }
 
 .container {
@@ -34,6 +38,7 @@ body {
     height: 100%;
     width: 100%;
     justify-content: center;
+    flex-shrink: 1;
 }
 
 .menu {
@@ -41,41 +46,50 @@ body {
     flex-direction: column;
     flex: 1;
     gap: 8px;
+    flex-shrink: 1;
     margin-top: auto;
     margin-bottom: auto;
+    align-content: center;
+    /* min-width: 20vw; */
     /* align-items: center; */
     /* position: absolute; */
 }
 
 
-.palette-menu {
-    display: flex;
-    flex-direction: column;
-    list-style: no;
+.color-name {
+    text-align: center;
+    font-size: 24px;
+    /* height: 20px;
+    width: 100px; */
+
 }
 
+
 button {
-    background-color: white;
+    border: none;
     color: black;
-    border: 1px white solid;
-    font-size: 36px;
+    font-size: 42px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
 }
 
 .grid-button {
-    background-color: white;
     color: black;
-    border: 1px white solid;
+    border: none;
     font-size: 36px;
 
 }
 
 
 .grid-1 {
-    box-shadow: 0 0 1px white;
-    flex: 1;
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+    flex: 1 0 0;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;    
+    width: 100%;
 }
 
 .grid-container {
@@ -92,3 +106,58 @@ button {
 .hide {
     display: none;
 }
+
+
+
+.color-button,
+button {
+    background-color: rgb(0, 170, 156);
+    /* box-shadow: 0 0 5px rgb(0, 0, 0); */
+    
+
+}
+
+.color-button {
+    height: 60px;
+    width: 150px;
+    border: none;
+    box-shadow: 0 0 0px rgb(0, 0, 0);
+    background-color: white;
+}
+
+.header {
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.footer {
+    font-size: 24px;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+   text-decoration: none; 
+   font-size: 35px;
+
+}
+
+button:hover {
+    transition: all .1s ease-in-out;
+    transform: scale(1.1);
+}
+
+a:visited,
+a:link {
+    color: rgb(5, 112, 199);
+    text-decoration: none; 
+}
+
+a:hover {
+    color: rgb(204, 204, 228);
+    transition: all .5s ease-in-out;
+    font-weight: 700;
+}
+
